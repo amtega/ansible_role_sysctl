@@ -3,15 +3,16 @@
 - name: Verify
   hosts: molecule_hosts
   gather_facts: no
+  become: yes
   tasks:
-    - name: Read /etc/sysctl file
+    - name: Read /etc/sysctl file 
       command: cat /etc/sysctl.conf
-      changed_when: false
+      changed_when: no
       register: read_main_sysctl_result
 
     - name: Read /etc/sysctl.d/50-hardlinks.conf file
       command: cat /etc/sysctl.d/50-hardlinks.conf
-      changed_when: false
+      changed_when: no
       register: read_hardlinks_sysctl_result
 
     - name: Check that sysctl configs are present
