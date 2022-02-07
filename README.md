@@ -34,7 +34,7 @@ This is an example playbook:
 
 ## Testing
 
-Tests are based on [molecule with docker containers](https://molecule.readthedocs.io/en/latest/installation.html).
+Tests are based on [molecule with vagrant virtual machines](https://molecule.readthedocs.io/en/latest/installation.html).
 
 ```shell
 cd amtega.sysctl
@@ -44,7 +44,7 @@ molecule test --all
 
 ## License
 
-Copyright (C) 2020 AMTEGA - Xunta de Galicia
+Copyright (C) 2022 AMTEGA - Xunta de Galicia
 
 This role is free software: you can redistribute it and/or modify it under the terms of:
 
